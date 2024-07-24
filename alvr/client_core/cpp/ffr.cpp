@@ -95,7 +95,7 @@ FoveationVars CalculateFoveationVars(FFRData data) {
     float edgeSizeX = targetEyeWidth - centerSizeX * targetEyeWidth;
     float edgeSizeY = targetEyeHeight - centerSizeY * targetEyeHeight;
 
-    float centerSizeXAligned =
+    float centerSizeXAligned = //compute centersize
         1. - ceil(edgeSizeX / (edgeRatioX * 2.)) * (edgeRatioX * 2.) / targetEyeWidth;
     float centerSizeYAligned =
         1. - ceil(edgeSizeY / (edgeRatioY * 2.)) * (edgeRatioY * 2.) / targetEyeHeight;
